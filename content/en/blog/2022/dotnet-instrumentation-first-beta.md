@@ -3,6 +3,7 @@ title: OpenTelemetry .NET Automatic Instrumentation Releases its first Beta
 linkTitle: .NET Auto-instrumentation Beta
 date: 2022-05-12
 author: OpenTelemetry .NET Automatic Instrumentation Team
+cSpell:ignore: devopsnote librarysupport
 ---
 
 We're excited to announce the
@@ -11,17 +12,17 @@ of the
 [OpenTelemetry .NET Automatic Instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation)
 project!
 
-Without this project, .NET developers need to use instrumentation packages to
+Without this project, .NET developers need to use instrumentation libraries to
 automatically generate telemetry data. For example, to instrument inbound
-ASP.NET Core requests, you need to use the ASP.NET Core instrumentation package
+ASP.NET Core requests, you need to use the ASP.NET Core instrumentation library
 and initialize it with the OpenTelemetry SDK.
 
 Now, developers can use
-[automatic instrumentation](/docs/reference/specification/glossary/#automatic-instrumentation)
-to initialize [signal](/docs/reference/specification/glossary/#signals)
-providers and generate telemetry data for supported
-[instrumented libraries](/docs/reference/specification/glossary/#instrumented-library).
-This approach has several benefits:
+[automatic instrumentation](/docs/specs/otel/glossary/#automatic-instrumentation)
+to initialize [signal](/docs/specs/otel/glossary/#signals) providers and
+generate telemetry data for supported
+[instrumented libraries](/docs/specs/otel/glossary/#instrumented-library). This
+approach has several benefits:
 
 - A technical path forward to support automatic instrumentation via
   [byte-code instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/v0.1.0-beta.1/docs/design.md#bytecode-instrumentations),

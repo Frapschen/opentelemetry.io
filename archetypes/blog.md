@@ -7,8 +7,10 @@ author: >- # If you have only one author, then add the single name on this line 
   ...
   [AuthorX Name](https://github.com/authorX_GH_ID) (Organization Name X)
 draft: true # TODO: remove this line once your post is ready to be published
-# canonical_url: http://somewhere.else/ # TODO: if this blog post has been posted somewhere else already, uncomment & provide the conancial URL here.
+# canonical_url: http://somewhere.else/ # TODO: if this blog post has been posted somewhere else already, uncomment & provide the canonical URL here.
 body_class: otel-with-contributions-from # TODO: remove this line if there are no secondary contributing authors
+issue: the issue ID for this blog post # TODO: See https://opentelemetry.io/docs/contributing/blog/ for details
+sig: SIG Name # TODO: add the name of the SIG that sponsors this blog post 
 ---
 
 <!-- If your post doesn't have secondary authors, then delete the following paragraph: -->
@@ -17,7 +19,8 @@ With contributions from secondary-author-name-1, ..., and secondary-author-n.
 
 ## Top-level heading
 
-Top-level headings start at **level 2**, as shown above.
+Top-level headings start at **level 2**. This means, that your post should not
+include `# headings` for top-level headings but `## headings` instead.
 
 ## Paragraphs
 
@@ -27,7 +30,7 @@ markdown formatter (see below).
 
 ## Images
 
-If you use images, make sure that your blog post is located in it's own
+If you use images, make sure that your blog post is located in its own
 directory. Put the images into the same directory.
 
 If you have an image stored at `content/en/{{ .File.Dir }}imagename.png`, you
@@ -37,10 +40,13 @@ can reference them like the following:
 
 ## Markdown formatter
 
-Before submitting a new commit run the Prettier command over your file:
+Before submitting a new commit run the formatter over your file:
 
 ```sh
-npm run prettier:write
+npm run format
 ```
 
 Happy writing!
+
+**Note:** If you view this page with the GitHub file viewer, you can safely
+ignore the `Error in user YAML` at the top of this page.
